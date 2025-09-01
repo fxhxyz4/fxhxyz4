@@ -163,8 +163,6 @@ def main():
     <source media="(prefers-color-scheme: light)" srcset="{image.url}">
     <img alt="FXHOS" src="{image.url}">
 </picture>
-
-<sub><i>Generated automatically using [x0rzavi/github-readme-terminal](https://github.com/x0rzavi/github-readme-terminal) on {time_now}</i></sub>
 </div>"""
     with open("README.md", "w") as fp:
         fp.write(readme_file_content)
