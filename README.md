@@ -1,7 +1,7 @@
 <div align="justify">
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://i.ibb.co/rKJ0Hxhc/output-gif.gif">
-    <source media="(prefers-color-scheme: light)" srcset="https://i.ibb.co/rKJ0Hxhc/output-gif.gif">
-    <img alt="FXHOS" src="https://i.ibb.co/rKJ0Hxhc/output-gif.gif">
+    <source media="(prefers-color-scheme: dark)" srcset="https://i.ibb.co/tP3CDMdL/output-gif.gif">
+    <source media="(prefers-color-scheme: light)" srcset="https://i.ibb.co/tP3CDMdL/output-gif.gif">
+    <img alt="FXHOS" src="https://i.ibb.co/tP3CDMdL/output-gif.gif">
 </picture>
 </div>
