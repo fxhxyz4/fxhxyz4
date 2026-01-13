@@ -82,7 +82,11 @@ def main():
     git_user_details = gifos.utils.fetch_github_stats("fxhxyz4")
     user_age = gifos.utils.calc_age(13, 7, 2006)
     t.clear_frame()
-    top_languages = [lang[0] for lang in git_user_details.languages_sorted]
+    if git_user_details and hasattr(git_user_details, 'languages_sorted'):
+        top_languages = [lang[0] for lang in git_user_details.languages_sorted]
+    else:
+        print("Warning: Could not retrieve language stats. Using defaults.")
+        top_languages = ["JavaScript", "C#", "Python", "TypeScript"]
     user_details_lines = f"""
     \x1b[30;101mfxhxyz@GitHub\x1b[0m
     --------------
