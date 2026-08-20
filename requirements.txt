@@ -1,0 +1,6 @@
+github-readme-terminal
+icecream
+python-dateutil
+python-dotenv
+requests
+tomli

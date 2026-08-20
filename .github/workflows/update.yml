@@ -1,23 +1,36 @@
-name: Update readme
+name: Update README GIF
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
+
 permissions:
   contents: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Install dependencies
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
         run: |
-          sudo apt update && sudo apt install -y ffmpeg
           python -m pip install --upgrade pip
+          pip install -r requirements.txt
           pip install github-readme-terminal
 
-      - name: Run script
+      - name: Generate GIF
         run: python main.py
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -25,7 +38,7 @@ jobs:
           GIFOS_GENERAL_COLOR_SCHEME: "yoru"
           GIFOS_GENERAL_USER_NAME: "fxhxyz"
 
-      - name: Commit and push gif
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

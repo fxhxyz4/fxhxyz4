@@ -1,33 +1,40 @@
-# ┌─────────────────────────────────────────────────┐
-# │           gifos terminal — config               │
-# └─────────────────────────────────────────────────┘
+"""Project configuration.
 
+Edit this file to customize the generated GitHub profile terminal.
+"""
+
+# Identity
 USER = "fxhxyz"
 HOSTNAME = "archlinux"
 GITHUB_USER = "fxhxyz4"
 
-BIRTH_DAY   = 14
+# Personal data used by the age counter
+BIRTH_DAY = 14
 BIRTH_MONTH = 2
-BIRTH_YEAR  = 2006
+BIRTH_YEAR = 2006
 
-DISTRO_NAME  = "Arch Linux"
-KERNEL       = "6.8.9-arch1-1"
-SHELL        = "zsh 5.9"
-DE_WM        = "Hyprland"
+# Operating system
+DISTRO_NAME = "Arch Linux"
+KERNEL = "6.8.9-arch1-1"
+SHELL = "zsh 5.9"
+DE_WM = "Hyprland"
 TERMINAL_APP = "Kitty"
-EDITOR       = "Neovim"
+EDITOR = "Neovim"
 
+# Hardware
 HOST_MACHINE = "Lenovo ThinkPad e15"
-CPU          = "11th Gen Intel i5-1135G7"
-GPU          = "Intel TigerLake-LP GT2"
-MEMORY       = "16 GiB"
+CPU = "11th Gen Intel i5-1135G7"
+GPU = "Intel TigerLake-LP GT2"
+MEMORY = "16 GiB"
 
+# Links
 TELEGRAM_URL = "t.me/femboyjs"
-GITHUB_URL   = "github.com/fxhxyz4"
+GITHUB_URL = "github.com/fxhxyz4"
 
-TERMINAL_WIDTH  = 860
+# Renderer
+TERMINAL_WIDTH = 860
 TERMINAL_HEIGHT = 480
-FPS             = 15
+FPS = 15
 
-FONT_MAIN  = "./fonts/gohufont-uni-14.ttf"
-FONT_SIZE  = 15
+FONT_MAIN = "./fonts/gohufont-uni-14.ttf"
+FONT_SIZE = 15
