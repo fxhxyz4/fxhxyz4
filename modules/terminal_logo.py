@@ -29,5 +29,4 @@ def colorize_logo(lines: list[str]) -> list[str]:
         for i, line in enumerate(lines)
     ]
 
-
 ARCH_LOGO = colorize_logo(ARCH_LOGO_RAW)
