@@ -10,10 +10,12 @@ summary, hardware information, links, and a live age counter.
 Python 3.10+ is recommended.
 
 ```bash
+python3 -m venv .venv
 source .venv/bin/activate
-pip install --upgrade "Pillow>=11.0.0"
-pip install --no-deps github-readme-terminal
-pip install icecream python-dateutil python-dotenv requests tomli
+
+pip install --upgrade "Pillow>=12.3.0"
+pip install --no-deps -r nodeps.txt
+pip install -r ./requirements.txt
 
 python main.py
 ```
@@ -22,7 +24,7 @@ The generated animation is saved as `output.gif`.
 
 ## ⚙️ Configuration
 
-Most customization is intentionally kept in `config.py`.
+Most customization is intentionally kept in `./config/config.py`.
 
 You can change:
 
