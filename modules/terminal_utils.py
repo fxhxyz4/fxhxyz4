@@ -6,7 +6,7 @@ def visible_len(text: str) -> int:
     return len(ANSI_ESCAPE_RE.sub("", text))
 
 def make_palette() -> str:
-    from terminal_theme import (
+    from modules.terminal_theme import (
         RESET, MUTED, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE,
         BRIGHT_BLACK,
     )
