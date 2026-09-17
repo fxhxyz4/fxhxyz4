@@ -17,7 +17,7 @@ pip install --upgrade "Pillow>=12.3.0"
 pip install --no-deps -r nodeps.txt
 pip install -r ./requirements.txt
 
-python main.py
+python3 main.py
 ```
 
 The generated animation is saved as `output.gif`.
