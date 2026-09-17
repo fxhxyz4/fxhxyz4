@@ -24,7 +24,7 @@ The generated animation is saved as `output.gif`.
 
 ## ⚙️ Configuration
 
-Most customization is intentionally kept in `./config/config.py`.
+Most customization is intentionally kept in `./config/cfg.py`.
 
 You can change:
 
