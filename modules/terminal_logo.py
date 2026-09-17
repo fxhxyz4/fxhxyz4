@@ -1,4 +1,4 @@
-from terminal_theme import RESET, LOGO_PRIMARY, LOGO_SECONDARY
+from modules.terminal_theme import RESET, LOGO_PRIMARY, LOGO_SECONDARY
 
 ARCH_LOGO_RAW = [
     "                   -`                    ",

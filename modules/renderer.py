@@ -2,7 +2,7 @@ from pathlib import Path
 
 import gifos
 
-from config import (
+from config.cfg import (
     BIRTH_DAY, BIRTH_MONTH, BIRTH_YEAR,
     TERMINAL_WIDTH, TERMINAL_HEIGHT, FPS,
     FONT_MAIN, FONT_SIZE,
@@ -11,10 +11,10 @@ from config import (
     HOST_MACHINE, CPU, GPU, MEMORY,
     GITHUB_URL, TELEGRAM_URL,
 )
-from terminal_info import SystemInfo, build_info_lines
-from terminal_logo import ARCH_LOGO, ARCH_LOGO_RAW
-from terminal_theme import RESET, DIM, AT, HOST, LOGO_PRIMARY, COMMAND, FLAG, ARGUMENT
-from terminal_utils import make_palette, visible_len
+from modules.terminal_info import SystemInfo, build_info_lines
+from modules.terminal_logo import ARCH_LOGO, ARCH_LOGO_RAW
+from modules.terminal_theme import RESET, DIM, AT, HOST, LOGO_PRIMARY, COMMAND, FLAG, ARGUMENT
+from modules.terminal_utils import make_palette, visible_len
 
 def build_system_info() -> SystemInfo:
     return SystemInfo(

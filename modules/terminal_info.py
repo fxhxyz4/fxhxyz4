@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from terminal_theme import (
+from modules.terminal_theme import (
     RESET, BOLD, AT, HOST, KEY, VALUE, MUTED, LINK, USER,
 )
 
@@ -22,12 +22,12 @@ class SystemInfo:
     telegram_url: str = ""
 
 def build_info_lines(info: SystemInfo, age) -> list[str]:
-    key_width = 7
+    key_width = 8
 
     def kv(key: str, value: str, value_color: str = VALUE) -> str:
         return f"{KEY}{key:<{key_width}}{RESET} {value_color}{value}{RESET}"
 
-    separator = f"{MUTED}{'-' * 30}{RESET}"
+    separator = f"{MUTED}{'-' * 36}{RESET}"
     header = (
         f"{BOLD}{USER}{info.user}{RESET}"
         f"{AT}@{RESET}"
@@ -56,6 +56,6 @@ def build_info_lines(info: SystemInfo, age) -> list[str]:
     if info.github_url:
         lines.append(kv("github", info.github_url, value_color=LINK))
     if info.telegram_url:
-        lines.append(kv("tg", info.telegram_url, value_color=LINK))
+        lines.append(kv("telegram", info.telegram_url, value_color=LINK))
 
     return lines
