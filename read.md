@@ -10,7 +10,7 @@ summary, hardware information, links, and a live age counter.
 Requires Python 3.10+ and FFmpeg installed on your system.
 
 ```bash
-python3 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
 
 python -m pip install -r requirements.txt
