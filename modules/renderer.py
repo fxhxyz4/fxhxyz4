@@ -95,9 +95,15 @@ def render(output: str = "output.gif") -> None:
     )
 
     terminal.toggle_show_cursor(True)
-    terminal.gen_gif()
 
     generated = Path("output.gif")
+    generated.unlink(missing_ok=True)
+
+    terminal.gen_gif()
+
+    if not generated.is_file() or generated.stat().st_size == 0:
+        raise RuntimeError("GIF generation failed: output.gif was not created")
+
     if output != str(generated):
         generated.replace(output)
 
