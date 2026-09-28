@@ -56,7 +56,3 @@ Original project and inspiration:
 
 The original repository is MIT licensed. This project keeps the inspiration
 credit here intentionally.
-
-## 📄 License
-
-MIT. See the original repository for the upstream project and its license.
