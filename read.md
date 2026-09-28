@@ -13,11 +13,10 @@ Python 3.10+ is recommended.
 python3 -m venv .venv
 source .venv/bin/activate
 
-pip install --upgrade "Pillow>=12.3.0"
-pip install --no-deps -r nodeps.txt
-pip install -r ./requirements.txt
+python -m pip install -r requirements.txt
+python -m pip install --no-deps -r nodeps.txt
 
-python3 main.py
+python main.py
 ```
 
 The generated animation is saved as `output.gif`.
