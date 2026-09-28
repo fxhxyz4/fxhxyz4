@@ -11,6 +11,8 @@ Python 3.10+ is recommended.
 
 ```bash
 python3 -m venv .venv
+# Requires Python 3.10+ and FFmpeg installed on your system.
+
 source .venv/bin/activate
 
 python -m pip install -r requirements.txt
@@ -41,11 +43,6 @@ No renderer code should need to be changed for normal profile customization.
 ## 🤖 GitHub Actions
 
 The included workflow can regenerate `output.gif` on demand or on a schedule.
-
-Required repository secrets:
-
-- `GH_TOKEN`
-- `IMGBB_API_KEY`
 
 The workflow installs the `github-readme-terminal` package and uses the same
 `gifos` rendering stack as the local project.
