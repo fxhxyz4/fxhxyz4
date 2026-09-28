@@ -47,7 +47,7 @@ def build_info_lines(info: SystemInfo, age) -> list[str]:
         kv("host", info.host),
         kv("cpu", info.cpu),
         kv("gpu", info.gpu),
-        kv("memory", f"{info.memory} DDR4-3200 SO-DIMM"),
+        kv("memory", f"{info.memory}"),
         f"{MUTED}{'':<{key_width}}{RESET}",
         separator,
         kv("age", f"{age.years}y {age.months}m {age.days}d"),
