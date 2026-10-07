@@ -18,8 +18,8 @@ class SystemInfo:
     cpu: str
     gpu: str
     memory: str
-    github_url: str = ""
     telegram_url: str = ""
+    github_url: str = ""
 
 def build_info_lines(info: SystemInfo, age) -> list[str]:
     key_width = 8
@@ -53,9 +53,9 @@ def build_info_lines(info: SystemInfo, age) -> list[str]:
         kv("age", f"{age.years}y {age.months}m {age.days}d"),
     ]
 
-    if info.github_url:
-        lines.append(kv("github", info.github_url, value_color=LINK))
     if info.telegram_url:
         lines.append(kv("telegram", info.telegram_url, value_color=LINK))
+    if info.github_url:
+        lines.append(kv("github", info.github_url, value_color=LINK))
 
     return lines

@@ -4,13 +4,17 @@ Project configuration.
 Edit this file to customize the generated GitHub profile terminal.
 """
 
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+
 # Identity
 USER = "fxhxyz"
 HOSTNAME = "arch"
 GITHUB_USER = "fxhxyz"
 
 # Personal data used by the age counter
-BIRTH_DAY = 14
+BIRTH_DAY = 18
 BIRTH_MONTH = 2
 BIRTH_YEAR = 2006
 
@@ -37,5 +41,5 @@ TERMINAL_WIDTH = 860
 TERMINAL_HEIGHT = 480
 FPS = 15
 
-FONT_MAIN = "./fonts/gohufont-uni-14.ttf"
+FONT_MAIN = str(ROOT / "fonts" / "gohufont-uni-14.ttf")
 FONT_SIZE = 15
