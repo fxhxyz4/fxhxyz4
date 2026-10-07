@@ -29,8 +29,8 @@ GPU = "Intel TigerLake-LP GT2"
 MEMORY = "16 GiB"
 
 # Links
-TELEGRAM_URL = "t.me/Lilya4everYoung"
 GITHUB_URL = "github.com/fxhxyz4"
+TELEGRAM_URL = "t.me/redirect1488"
 
 # Renderer
 TERMINAL_WIDTH = 860
